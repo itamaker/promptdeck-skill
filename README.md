@@ -60,6 +60,16 @@ Then rank variants from an experiment score file:
 promptdeck optimize -template examples/review.tmpl -matrix examples/matrix.json -scores examples/scores.json
 ```
 
+### Help and version
+
+```bash
+promptdeck --help             # usage (also -h, help)
+promptdeck matrix --help      # flags of one subcommand (also help matrix)
+promptdeck --version          # promptdeck <version> (also version)
+```
+
+Help and version print to stdout and exit `0`. Running `promptdeck` with no arguments starts the interactive UI, so scripts and coding agents should always pass a subcommand.
+
 ## Requirements
 
 - Go `1.22+`
